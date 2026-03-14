@@ -3,9 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <link rel="stylesheet" href="styles/base.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    <title>WDD 131 - Dynamic Web Fundamentals - Reynaldo Armenta Bravo</title>
+    <meta name="description" content="WDD 131 - Dyanmic Web Fundamentals by Reynaldo Armenta Bravo. Gives a quick summary of who I am and where I'm from.">
+    <meta name="author" content="Reynaldo Armenta Bravo">
+    <script src="scripts/getdates.js" defer></script>
 </head>
 <body>
-    <h1>WDD 131 - Armenta Bravo</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/reyarmentabravo1997/">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">I-Learn</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/ot/josh/1?lang=eng&id=p9#p9">Scripture</a>
+            <a href="">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Reynaldo Armenta Bravo</h1>
+        <section class="card left">
+            <h2>About Me</h2>
+            <img src="images/me.jpg" alt="It's me" width="200px" class="align-right">
+            <p>My name is Reynaldo although mostly everyone calls me Rey. I was born in Mexico City, but I was raised in northern Mexico in the state of Chihuahua in a small town. I'm currently working as an Interpreter from home. The things that enjoy the most are being outdoors, playing sports,  having a good carne asada with friends or family, and watching movies or tv series.</p>
+        </section>
+
+        <section class="card right">
+            <h2>Web Dev Resources</h2>
+            <img src="images/keyboard.jpg" alt="Darkblue keyboard" width="200px">
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> | Reynaldo Armenta Bravo | Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+
 </body>
 </html>
