@@ -13,11 +13,11 @@ body {
     font-weight: 400;
 }
 
-header span {
+header {
     display: block;
     text-align: center;
     background-color: var(--primary-color);
-    padding: 1rem;
+    padding-top: 10px;
 }
 
 header nav {
