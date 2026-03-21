@@ -1,0 +1,134 @@
+:root {
+    --primary-color:
+        #3e5641;
+    --secondary-color: #043565;
+    --accent-color1:#9bc4cb;
+    --accent-color2: #b2675e;
+    --accent-color3: #f6ae2d;
+    --text-color1: #333;
+    --text-color2: #fff;
+    --font-main: Roboto Slab, serif;
+    ;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-main);
+    font-weight: 400;
+}
+
+header {
+    background-color: var(--primary-color);
+    display: grid;
+    grid-gap: 1rem;
+    padding: 20px;
+    color: var(--text-color2);
+}
+
+header {
+    margin: 0 auto;
+}
+
+#menu {
+    background-color: var(--secondary-color);
+    color: var(--text-color2);
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    list-style: none;
+
+}
+
+.navigation a {
+    display: none;
+    padding: 1rem;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+}
+
+nav a {
+    display: block;
+    color: var(--text-color2);
+    text-align: center;
+    padding: 1rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    text-decoration: underline double;
+    background-color: var(--accent-color1);
+    color: var(--text-color1);
+}
+
+.open a {
+    display: block;
+}
+
+.active {
+    color: var(--accent-color3);
+}
+
+.stuff {
+    margin: 0.5rem;
+    max-width: 580px;
+    height: 100vh;
+}
+
+main {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+    grid-gap: 25px;
+    place-items: center;
+}
+
+figure {
+    margin: 15px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    margin: 0.5rem;
+}
+
+figcaption {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    padding: 10px;
+    color: var(--text-color2);
+}
