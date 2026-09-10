@@ -3,9 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WDD 131</title>
+    <title>WDD 131 - Dynamic Web Fundamentals - Reynaldo Armenta Bravo</title>
+    <meta name="description" content="WDD 131 - Dynami Web Fundamentals, Reynaldo Armenta Bravo, Home page, about me.">
+    <meta name="author" content="Reynaldo Armenta Bravo">
+
+    <link href="styles/base.css" rel="stylesheet">
+
+    <script src="scripts/getdates.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caacupe+One&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1> WDD 131 - Reynaldo Armenta Bravo</h1>
+    <header>
+        <span id="course-title">WDD 131 - Dynamic Web Fundamentals</span>
+        <nav>
+            <a href="https://www.linkedin.com/in/reyarmentabravo1997/?locale=en">LinkedIn</a>
+            <a href="https://byupw.instructure.com/">Canvas</a>
+            <a href="https://www.churchofjesuschrist.org/study/scriptures/bofm/ether/12?lang=eng&id=p27#p27">Scripture</a>
+            <a href="#">Final Project</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Reynaldo Armenta Bravo</h1>
+        <section class="card left">
+            <h2>About Me</h2>
+            <img src="images/me.jpg" alt="Reynaldo looking at the horizon" width="200" class="align-right">
+            <p>My name is Reynaldo, but everyone calls me Rey. I'm was born in Mexico City, but I was raised in northern Mexico in the state of Chihuahua, where I currently live. I'm currently working as an interpreter. I really enjoy playing sports and outdoor activites. </p>
+        </section>
+        <section class="card right">
+            <h2>Web Dev Resources</h2>
+            <img src="images/keyboard.jpg" alt="Dark Windows keyboard" width="200">
+            <ul>
+                <li><a href="https://dev.to/">Dev.to Community</a></li>
+                <li><a href="https://www.smashingmagazine.com/">Smashing Magazine</a></li>
+                <li><a href="https://css-tricks.com/">CSS Tricks</a></li>
+                <li><a href="https://www.w3schools.com/">W3 Schools</a></li>
+                <li><a href="https://www.udemy.com/?utm_medium=na&gad_source=1">Udemy</a></li>
+                <li><a href="https://picsum.photos/">Lorem Picsum Image Placeholder</a></li>
+            </ul>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🏐Reynaldo Armenta Bravo🏐Chihuahua, Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
 </html>
