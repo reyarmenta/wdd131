@@ -68,7 +68,6 @@ section dd {
 
 footer {
     background-color: var(--secondary-color);
-    color: var();
     text-align: center;
     padding: 1rem;
 }
