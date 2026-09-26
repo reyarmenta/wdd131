@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #e76f51;
+    --secondary-color: #f4a261;
+    --accent-color1: #26465399;
+    --accent-color2: #2a9d8f;
+    --accent-color3: #e9c46a;
+    --text-color1: black;
+    --text-color2: white;
+    --font-main: "Edu QLD Hand", cursive;
+}
+
+@media screen and (min-width: 750px) {
+   
+    main {
+        position: relative;
+    }
+
+    .hero img {
+        height: auto;
+        object-fit: cover;
+    }
+
+    section {
+        position: absolute;
+        color: var(--text-color2);
+        width: 20rem;
+        background-color: var(--accent-color1);
+        border-radius: 15px;
+    }
+
+    .data {
+        left: 2rem;
+        top: 2rem;
+    }
+
+    .weather {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .larger {
+        display: inline;
+    }
+
+    .weather img {
+        display: none;
+    }
+}
