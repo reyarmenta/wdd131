@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Temple Album - WDD131 Dynamic Web Fundamentals</title>
+    <meta name="description" content="Picture Album, display an album page in both small and larger view.">
+    <meta name="author" content="Reynaldo Armenta Bravo">
+
+    <link href="styles/filtered-temples.css" rel="stylesheet">
+    <link href="styles/filtered-temples-large.css" rel="stylesheet">
+
+    <script src="scripts/filtered-temples.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=PT+Serif:wght@400;700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Temple Album</h1>
+        <button type="button" id="menu"></button>
+        <nav>
+            <ul class="navigation">
+                <li><a href="#" id="all">Home</a></li>
+                <li><a href="#" id="older">Old</a></li>
+                <li><a href="#" id="newer">New</a></li>
+                <li><a href="#" id="larger">Large</a></li>
+                <li><a href="#" id="smaller">Small</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h2>Home</h2>
+        <div class="container">
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ⚽ Reynaldo Armenta Bravo ⚽ Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
