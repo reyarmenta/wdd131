@@ -46,7 +46,7 @@ main {
 }
 .wf1 select,
 .wf1 input[type="text"],
-.wf1 input[type="textarea"],
+.wf1 textarea,
 .wf1 input[type="date"]
  {
     display: block;
@@ -76,10 +76,6 @@ main {
 .wf1 input[type="radio"],
 .wf1 input[type="checkbox"] {
     margin-right: 6px;
-}
-
-.rev input[type="textarea"] {
-    height: 150px;
 }
 
 .wf1 input[type="submit"] {
