@@ -46,6 +46,7 @@ main {
 }
 .wf1 select,
 .wf1 input[type="text"],
+.wf1 input[type="textarea"],
 .wf1 input[type="date"]
  {
     display: block;
@@ -77,7 +78,7 @@ main {
     margin-right: 6px;
 }
 
-.rev input[type="text"] {
+.rev input[type="textarea"] {
     height: 150px;
 }
 
