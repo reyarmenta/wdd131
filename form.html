@@ -23,13 +23,13 @@
     <main>
         <form method="get" action="review.html" class="wf1">
             <fieldset>
-                <label for="product">Product Name </label>
+                <label for="product">Product Name * </label>
                     <select id="product" name="product" required>
                         <option value="" disabled selected>Select a Product ...</option>
                     </select>
                 
                 <div class="rating-container">
-                    <span class="rating-title">Overall Rating</span>
+                    <span class="rating-title">Overall Rating *</span>
                     <div class="rating-options">
                         
                         <label for="1star">☆</label>
@@ -50,7 +50,7 @@
                 </div>
                 
                 <label for="installationDate">Date of Installation </label>
-                <input type="date" id="installationDate" name="installationDate">
+                <input type="date" id="installationDate" name="installationDate" required>
                 
                 <div class="features-container">
                     <span class="features-title">Which features did you find useful in the product?<br>(Check all that apply)</span><br>
