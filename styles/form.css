@@ -1,0 +1,114 @@
+html {-webkit-text-size-adjust: 100%; -ms-text-size-adjust: 100%}
+
+:root {
+    --primary-color: #1b263b;
+    --secondary-color: #778da9;
+    --accent-color: #e0e1dd;
+    --text-color1: black;
+    --text-color2: white;
+    --font-main: "Eagle Lake", serif; 
+}
+
+* { -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;}
+
+body {
+    font-size: 16px;
+    font-family: var(--font-main);
+}
+
+header {
+    padding: .5rem 2%;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+    text-align: center;
+}
+
+main {
+    padding: 0 2%;
+    min-height: 20rem;
+}
+
+.wf1 fieldset {
+    background-color: var(--accent-color);
+    margin: 1rem auto;
+    padding: 1rem .5rem;
+}
+
+.wf1 label {
+    display: block;
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+
+.wf1 div {
+    padding-top: 1rem;
+    font-size: .9rem;
+}
+.wf1 select,
+.wf1 input[type="text"],
+.wf1 input[type="date"]
+ {
+    display: block;
+    padding: .75rem;
+    width: 100%;
+}
+
+.rating-options {
+    display: flex;
+    gap: 15px;
+    margin-top: 5px;
+    justify-content: space-evenly;
+}
+
+.rating-options label {
+    display: inline-flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 0;
+    font-size: 0.9rem;
+}
+
+.rating-options input[type="radio"] {
+    margin: 5px 0 0 0;
+}
+
+.wf1 input[type="radio"],
+.wf1 input[type="checkbox"] {
+    margin-right: 6px;
+}
+
+.rev input[type="text"] {
+    height: 150px;
+}
+
+.wf1 input[type="submit"] {
+    border: none;
+    background-color: var(--secondary-color);
+    color: var(--text-color2);
+    border-radius: 6px;
+    padding: .9rem;
+    width: 94%;
+    margin: 1rem;
+    font-family: var(--font-main);
+}
+
+.wf1 p {
+    text-align: center;
+}
+
+
+footer {
+    text-align: center;
+    background-color: var(--primary-color);
+    color: var(--text-color2);
+    padding: .5rem 2%;
+}
+
+/*------------------------------LARGER SCREENS-------------------------*/
+
+@media only screen and (min-width:35rem) {
+    body {
+        max-width: 600px;
+        margin: auto;
+    }
+}

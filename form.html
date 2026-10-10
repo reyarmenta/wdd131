@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1 maximum-scale=1">
+    <title>WDD 131 Dynamic Web Fundamentals - Product Review Form</title>
+    <meta name="description" content="This is a product review form, where the user is able to rate and review products.">
+    <meta name="author" content="Reynaldo Armenta Bravo">
+
+    <link href="styles/form.css" rel="stylesheet">
+
+    <script src="scripts/form.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Eagle+Lake&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Product Review</h1>
+    </header>
+
+    <main>
+        <form method="get" action="review.html" class="wf1">
+            <fieldset>
+                <label>Product Name <br>
+                    <select id="product" name="product" required>
+                        <option value="" disabled selected>Select a Product ...</option>
+                
+                    </select>
+                </label>
+                
+                <div class="rating-container">Overall Rating
+                    <div class="rating-options">
+                        <label>☆<input type="radio" id="1star" name="rating" value="1" required></label>
+                        <label>☆☆<input type="radio" id="2star" name="rating" value="2" required></label>
+                        <label>☆☆☆<input type="radio" id="3star" name="rating" value="3" required></label>
+                        <label>☆☆☆☆<input type="radio" id="4star" name="rating" value="4" required></label>
+                        <label>☆☆☆☆☆<input type="radio" id="5star" name="rating" value="5" required></label>
+                    </div>
+
+                </div>
+                
+                <label>Date of Installation <br><input type="date" name="installationDate"></label>
+                
+                <div>Which features did you find useful in the product?<br>(Check all that apply)<br>
+                    <label><input type="checkbox" id="durability" name="durability" value="yes">Durability</label>
+                    <label><input type="checkbox" id="use" name="use" value="yes">Ease of Use</label>
+                    <label><input type="checkbox" id="performance" name="performance" value="yes">Performance</label>
+                    <label><input type="checkbox" id="design" name="design" value="yes">Design</label>
+                </div>
+                
+                <div class="rev">
+                    <label>Written Review <br>(Optional)<input type="text" id="review" name="review"></label>
+                </div>
+                
+                
+                <label>Your Name <br>(Optional)<input type="text" id="name" name="name"></label>
+
+                <input type="submit" value="Post Review">
+
+                <p id="counter">Posted Reviews: 0</p>
+                
+            </fieldset>
+            
+            
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy;<span id="currentyear"></span> ⚽ Reynaldo Armenta Bravo ⚽ Mexico</p>
+        <p id="lastModified"></p>
+        
+    </footer>
+</body>
+</html>
