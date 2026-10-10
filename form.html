@@ -23,22 +23,29 @@
     <main>
         <form method="get" action="review.html" class="wf1">
             <fieldset>
-                <label>Product Name <br>
+                <label for="product">Product Name </label>
                     <select id="product" name="product" required>
                         <option value="" disabled selected>Select a Product ...</option>
-                
                     </select>
-                </label>
                 
-                <div class="rating-container">Overall Rating
+                <div class="rating-container">
+                    <span class="rating-title">Overall Rating</span>
                     <div class="rating-options">
-                        <label>☆<input type="radio" id="1star" name="rating" value="1" required></label>
-                        <label>☆☆<input type="radio" id="2star" name="rating" value="2" required></label>
-                        <label>☆☆☆<input type="radio" id="3star" name="rating" value="3" required></label>
-                        <label>☆☆☆☆<input type="radio" id="4star" name="rating" value="4" required></label>
-                        <label>☆☆☆☆☆<input type="radio" id="5star" name="rating" value="5" required></label>
-                    </div>
+                        <input type="radio" id="1star" name="rating" value="1" required>
+                        <label for="1star">☆</label>
 
+                        <input type="radio" id="2star" name="rating" value="2" required>
+                        <label for="2star">☆☆</label>
+
+                        <input type="radio" id="3star" name="rating" value="3" required>
+                        <label for="3star">☆☆☆</label>
+
+                        <input type="radio" id="4star" name="rating" value="4" required>
+                        <label for="4star">☆☆☆☆</label>
+
+                        <input type="radio" id="5star" name="rating" value="5" required>
+                        <label for="5star">☆☆☆☆☆</label>
+                    </div>
                 </div>
                 
                 <label>Date of Installation <br><input type="date" name="installationDate"></label>
