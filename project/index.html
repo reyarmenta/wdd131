@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WDD 131 Dynamic Web Fundamentals - Paquime Region Camping - </title>
+    <meta name="description" content="This is the home page for Paquime Region Camping, that shows you a general map of the area a little bit of information.">
+    <meta name="author" content="Reynaldo Armenta Bravo">
+
+    <link href="styles/base.css" rel="stylesheet">
+    <script src="scripts/paquime-camping.js" defer></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Isometra&family=Open+Sans:ital@0;1&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <header>
+        <h1>Paquime Region Camping</h1>
+        
+        <img src="images/camping_logo.svg" alt="tent logo" width="80">
+        <button type="button" id="menu"></button>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact Us</a>
+            <a href="gallery.html" id="all">Camping Spots</a>
+        </nav>
+    </header>
+    <main>
+        <img src="images/river-smaller.webp" alt="River in the mountains" >
+        <div class="purpose">
+            <h2>Paquime Camping</h2>
+            <p> We are here to guide you in your adventures, find local spots to go camping, and help you navigate the area. We can advice you on certain spots if you need keys, if it's free, and how easy it is to reach those areas.
+            </p>
+            <p>The region of Paquime is located in the northwestern area of the state of Chihuahua, Mexico. The most populated cities,
+            known as Nuevo Casas Grandes and Casas Grandes are close to it, although compared to other cities they would be
+            considered towns. Closer to Casas Grandes you can find the ruins of Paquime. It was once a city of native indians who
+            lived in the region. This region has two main rivers, Rio Palanganas and Rio Piedras verdes, both join and turn into the
+            Rio Casas Grandes. Even though they're located in a dessert area this rivers have water all year long, they both
+            originate in the mountains, and you can find awesome camping spots all around.</p>
+        </div>
+        <div class="map">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d237289.39159858707!2d-108.15380446932184!3d30.241637179561636!3m2!1i1024!2i768!4f13.1!5e0!3m2!1ses-419!2smx!4v1792025101153!5m2!1ses-419!2smx"
+                width="400" height="400" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="strict-origin-when-cross-origin"></iframe>
+        </div>
+    </main>
+    <footer>
+        <p>&copy;<span id="currentyear"></span> 🏕️ Reynaldo Armenta Bravo 🏕️ Mexico</p>
+        <p id="lastModified"></p>
+    </footer>
+</body>
+</html>
